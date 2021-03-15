@@ -8,6 +8,7 @@
 // і в тих в яких поведінку міняти ми не хочем,потрібно перенаправити на запит батьківському обєкту
 // цей варіант краще застосовувати коли відбуваються грандіозні зміни, які стосуються більше 1-ої функції.
 
+// Перший спосіб
 function Ball(param) {
     this._radius = param.radius;
     this._color = param.color;
@@ -26,7 +27,6 @@ Ball.prototype = {
         }
     };
 
-// Перший спосіб
 new Ball({radius: 100, color: "red"});
 
 let ball1 = new SpeckledBall( new StripedBall( new Ball({ radius:100, color:"red"})));
