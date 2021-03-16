@@ -52,7 +52,7 @@ ball2.draw();
 function MakeStripedBall( ball )
 {
     let functionName = "draw";
-    let prevState = ball[ function_name ];
+    let prevState = ball[ functionName ];
 
     ball[ functionName ] = function()
     {
